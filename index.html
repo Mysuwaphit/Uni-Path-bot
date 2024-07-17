@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Mastermind</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        #instructions {
+            display: none;
+            margin-top: 20px;
+        }
+        .number-input {
+            width: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Number Mastermind</h1>
+        <button id="howToPlayBtn">How to Play</button>
+        <div id="instructions">
+            <p>Instructions to play the game:</p>
+            <ul>
+                <li>Enter a 4-digit number between 0-9 in the input fields.</li>
+                <li>Try to guess the correct number sequence within 10 times.</li>
+                <li>Click the "Submit" button to see if your guess is correct.</li>
+            </ul>
+        </div>
+        <div id="game">
+            <input type="number" class="number-input" min="0" max="9">
+            <input type="number" class="number-input" min="0" max="9">
+            <input type="number" class="number-input" min="0" max="9">
+            <input type="number" class="number-input" min="0" max="9">
+            <br><br>
+            <button id="submitGuess">Submit</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
